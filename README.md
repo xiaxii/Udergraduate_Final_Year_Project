@@ -12,7 +12,7 @@ A final year project must involve substantial work by an individual student in o
 ## Specification
 
 **Titel**: 
-Classifying Web Complaints to Twitter Project Title
+Classifying Web Complaints to Twitter
 
 **Scope**: 
 Data Science and Artificial Intelligence
@@ -31,6 +31,13 @@ Main tasks:
 1. A collated dataset containing both tweets and complaints 
 2. A classifier that can predict if a tweet might get complaints
 3. An detailed evaluation of the classifier to show precision and recall
+
+## Dataset
+| Dataset (csv) | # of Records | Content |
+|-------------:| -------------:| -----:|
+| reported_tweet | 737,689 | **tweet_id**, user_id, JSON format tweet |
+| complaint_tweet |1,863,979 | **tweet_id**, **notice_id**, user_id, tweet_url |
+| notices | 157,868 | **notice_id**, notice_type, notice_date_sent, notice_sender_name, notice_action_taken, notice_principal_name, notice_recipient_name |
   
 ## Early Term Progress
 
