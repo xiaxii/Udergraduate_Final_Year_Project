@@ -62,7 +62,6 @@ To understand complaint behaviours, the [Lumen database](https://www.lumendataba
 ### Hashtag Word Cloud
 ![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/wordCloud_hashtag.png)
 
-
 ## Code
 Environment: Python 2.7
 
@@ -115,6 +114,25 @@ predict,tweet_id,notice_type
 
 #### Fold 'Other scripts'
 Random Forest/ Isolation Forest
+
+# Methods
+![Work Flow](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/flow.png)
+The project starts by analysing the dataset (Step 1: Characterising datasets). After statistical analysis on the reported tweets, we were able to filter features (Step 2: Prepare data for the classifier) and to build the classifier (Step 3: Building the classifier).
+## Attributes choosing
+| Name | Type | Note |
+|:-------------|-------------:|:-------------|
+| friend_count | int | directly from tweet JSON |
+| followers_count | int | directly from tweet JSON |
+| status_count | int | directly from tweet JSON |
+| list_count | int | directly from tweet JSON |
+| user_favorites_count | int | directly from tweet JSON |
+| retweet_count | int | directly from tweet JSON |
+| favorite_count | int | directly from tweet JSON |
+| urls_num | int | len(parse_tweet['entities']['urls']) |
+| media_num | int | len(parse_tweet['entities']['media']) |
+| mention_users_num | int | len(parse_tweet['entities'] |
+| hashtags list | unicode | presented as vectors in later steps|
+(The first 5 was droped after experiments)
 
 # Outcomes
 1. Analysis
