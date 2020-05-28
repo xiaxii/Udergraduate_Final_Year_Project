@@ -132,10 +132,15 @@ The project starts by analysing the dataset (Step 1: Characterising datasets). A
 | media_num | int | len(parse_tweet['entities']['media']) |
 | mention_users_num | int | len(parse_tweet['entities'] |
 | hashtags list | unicode | presented as vectors in later steps|
+
 (The first 5 was droped after experiments)
 
 # Outcomes
-1. Analysis
+| Dataset | Time used (seconds) |	TP	| TN	| FP	| FN	| P	| R	| F1 |
+| :------------- | :------------- | -------------: | -------------: | -------------: | -------------: | -------------: | -------------: | -------------: |
+| Training	| 3,400.44 |	–	| –	| –	| –	| –	| –	| – |
+| Testing |	224.52 |	70,197	| 0	| 0	| 8,278	| 1	| 0.89	| 0.94 |
+
 
 
 
