@@ -42,6 +42,26 @@ To understand complaint behaviours, the [Lumen database](https://www.lumendataba
 | complaint_tweet |1,863,979 | **tweet_id**, **notice_id**, user_id, tweet_url |
 | notices | 157,868 | **notice_id**, notice_type, notice_date_sent, notice_sender_name, notice_action_taken, notice_principal_name, notice_recipient_name |
 
+### Notice types
+| Notice Type | Count |
+|-------------:| -------------:|
+| CourtOrder | 8 |
+| DMCA | 157453 |
+| Defamation | 4 |
+| GovernmentRequest | 148 |
+| LawEnforcementRequest | 3 |
+
+### Complaints/person
+![https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/distribution_hist.png]
+
+### Top10 most frequent hashtags
+![https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/10_frequent_words_hashtag_inReport.png)
+Other,251]
+
+### Hashtag Word Cloud
+![https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/wordCloud_hashtag.png]
+
+
 ## Code
 Environment: Python 2.7
 
@@ -92,8 +112,11 @@ predict,tweet_id,notice_type
 4. Word Clouds of both positive and negative hashtag groups
 5. Word Frequency of both positive and negative hashtag groups
 
-### Fold 'Other scripts'
+#### Fold 'Other scripts'
 Random Forest/ Isolation Forest
+
+# Outcomes
+1. Analysis
 
 
 
