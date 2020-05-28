@@ -77,17 +77,17 @@ This led us to think what features in tweets are related to copyrights. In this 
 
 ## Step 2: Prepare data for the classifier
 Among the tremendous long list of features, 10 attributes were chosen:
-•	‘friend_count’: The number of users this account is following (i.e. their “followings”). 
-•	‘follower_count‘: The number of followers this account currently has. 
-•	‘status_count’: The number of Tweets (including retweets) issued by the user. 
-•	‘listed_count’: The number of public lists that this user is a member of. 
-•	‘user_favorites_count’: The number of Tweets this user has liked in the account’s lifetime. British spelling used in the field name for historical reasons. 
-•	‘retweet_count’: The number of times this Tweet has been retweeted. 
-•	‘favorite_count’: It indicates approximately how many times this Tweet has been liked by Twitter users. 
-•	‘urls_num’: The number of URLs included in the text of a Tweet. 
-•	‘media_num’: The number of photos and video/mp4 in a Tweet. 
-•	‘mention_users_num’: The number of other Twitter users mentioned in the text of the Tweet. 
-•	Especially, we pick the hashtags from the ‘entities’ object, and ‘hashtags{}’ is a list of hashtag words. 
+-	‘friend_count’: The number of users this account is following (i.e. their “followings”). 
+-	‘follower_count‘: The number of followers this account currently has. 
+-	‘status_count’: The number of Tweets (including retweets) issued by the user. 
+-	‘listed_count’: The number of public lists that this user is a member of. 
+-	‘user_favorites_count’: The number of Tweets this user has liked in the account’s lifetime. British spelling used in the field name for historical reasons. 
+-	‘retweet_count’: The number of times this Tweet has been retweeted. 
+-	‘favorite_count’: It indicates approximately how many times this Tweet has been liked by Twitter users. 
+-	‘urls_num’: The number of URLs included in the text of a Tweet. 
+-	‘media_num’: The number of photos and video/mp4 in a Tweet. 
+-	‘mention_users_num’: The number of other Twitter users mentioned in the text of the Tweet. 
+-	Especially, we pick the hashtags from the ‘entities’ object, and ‘hashtags{}’ is a list of hashtag words. 
 
 | Name | Type | Note |
 |:-------------|-------------:|:-------------|
@@ -113,6 +113,21 @@ In this case, having all the data objects with the same label in the target clas
 In another aspect, due to the characteristics of datasets, we have the complains which are over 99% copyright cases. What we need to do is to predict the complained ones, especially those might receive complaints because of copyright issue (DMCA). This is a novelty detection learning process. The point is to predict whether the tweets belong to the group of complained tweets (i.e., whether they are within the probability distribution of the original data). Thus, the One-Class SVM was chosen as our classification algorithm, which aims to discriminate between the complained ones and non-complained ones.
 
 One-class SVM uses a kernel method, to map the original space to the feature space, and then draw a ‘circle’ (hyperplane) in the feature space. In the circle, we have the tweets that will be complained. Here, we applied a Gaussian kernel – the Radial Basis Function (RBF) kernel. The choice of the kernel can be automated by optimising a cross-validation based model selection. But, automated choice of kernels and kernel/regularization parameters is a tricky issue, as it is very easy to overfit the model selection criterion (typically cross-validation based). Chances are that we may end up with a worse model than the baseline. Thus, we chose the RBF, since the Radial Basis Function kernel makes a good default kernel. 
+
+# Outcomes
+| Dataset | Time used (seconds) |	TP	| TN	| FP	| FN	| P	| R	| F1 |
+| :------------- | :------------- | -------------: | -------------: | -------------: | -------------: | -------------: | -------------: | -------------: |
+| Training	| 3,400.44 |	–	| –	| –	| –	| –	| –	| – |
+| Testing |	224.52 |	70,197	| 0	| 0	| 8,278	| 1	| 0.89	| 0.94 |
+
+Where: 
+- **TP (Ture Positive)**: Predict the complained tweets as ‘will be complained’
+- **TN (True Negative)**: Predict the non-complained tweets as ‘will not be complained’
+- **FP (False Positive)**: Predict the non-complained tweets as ‘will be complained'
+- **FN (False Negative)**: Predict the complained tweets as ‘will not be complained’
+- **P (Precise)**: The fraction of truly complained tweets among the tweets that were predicted to receive complaints. P=TP/(TP+FP)
+- **R (Recall)**: The fraction of tweets that were predicted to receive complaints among all complained tweets. R=TP/(TP+FN)
+- **F1 Score**: The harmonic mean of P and R. F1=(2P×R)/(P+R)
 
 ## Code
 Environment: Python 2.7
@@ -165,21 +180,6 @@ predict,tweet_id,notice_type
 
 #### Fold 'Other scripts'
 Random Forest/ Isolation Forest
-
-# Outcomes
-| Dataset | Time used (seconds) |	TP	| TN	| FP	| FN	| P	| R	| F1 |
-| :------------- | :------------- | -------------: | -------------: | -------------: | -------------: | -------------: | -------------: | -------------: |
-| Training	| 3,400.44 |	–	| –	| –	| –	| –	| –	| – |
-| Testing |	224.52 |	70,197	| 0	| 0	| 8,278	| 1	| 0.89	| 0.94 |
-
-Where: 
-- **TP (Ture Positive)**: Predict the complained tweets as ‘will be complained’
-- **TN (True Negative)**: Predict the non-complained tweets as ‘will not be complained’
-- **FP (False Positive)**: Predict the non-complained tweets as ‘will be complained'
-- **FN (False Negative)**: Predict the complained tweets as ‘will not be complained’
-- **P (Precise)**: The fraction of truly complained tweets among the tweets that were predicted to receive complaints. P=TP/(TP+FP)
-- **R (Recall)**: The fraction of tweets that were predicted to receive complaints among all complained tweets. R=TP/(TP+FN)
-- **F1 Score**: The harmonic mean of P and R. F1=(2P×R)/(P+R)
 
 
 
