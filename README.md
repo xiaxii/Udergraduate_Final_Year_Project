@@ -1,4 +1,4 @@
-# Final Year Project
+# Acdemic Requirements
 ## Scope of the project
 This is an individual substantial work of a real academic research carried out with my supervisor at Queen Mary University of London. It includes identifying something novel and getting results. 
 **My project's scope: software and research.**
@@ -15,7 +15,8 @@ Data Science and Artificial Intelligence
 Twitter is a popular microblogging platform, similar to Weibo. Users can post short messages that are then sent to their ’followers’. If somebody posts a message that contravenes Twitter’s policies, it is possible for third party organisations to send a complaint. We have been gathering these complaints, and have a large dataset containing over 1 million complained about tweets. The project will involve performing a detailed statistical analysis of this dataset to understand its properties, e.g. how gets complained about, what is contained within their tweets, who send complaints, and how are complaints distributed across accounts? Once the statistical analysis is complete, you will then be expected to build a binary classifier that can automatically identify tweets that may receive complaints. As such, this will allow Twitter to predict which tweets may go on to receive complaints.
 
 **Keywords**: Social media, machine learning, natural language processing 
-Main tasks:
+
+**Main tasks**:
 1. Collate existing Twitter datasets which contains complaints
 2. Perform statistical analysis of complaints to Twitter
 3. Build classifier to identify tweets that may receive complaints 
@@ -26,11 +27,11 @@ Main tasks:
 2. A classifier that can predict if a tweet might get complaints
 3. An detailed evaluation of the classifier to show precision and recall
 
-# Introduction
+# Background
 On Twitter, people can post short messages to their followers, which are called tweets. For contents presented on the platform, Twitter has its rules and policy to manage tweets. And Twitter responds to copyright complaints with the guide of the Digital Millennium Copyright Act (DMCA). Web complaint is a common mechanism for reporting offensive content to Twitter.
 In practice, the interactions between users, content moderators, and social media platforms are complex and highly strategic.
-
-The most frequently applied response strategy to complaints is asking complainants for further information. However, this does not appease the complainants. (Einwiller and Steilen, 2015) Significantly, complaints are bearing a great deal of weight, arbitrating both the relationship between users, the platform and the negotiation around contentious public issues (Crawford and Gillespie, 2014). As such, it is necessary to build an intelligent classifier to ease the pressure of scrutiny.
+The most frequently applied response strategy to complaints is asking complainants for further information. However, this does not appease the complainants. Significantly, complaints are bearing a great deal of weight, arbitrating both the relationship between users, the platform and the negotiation around contentious public issues. As such, it is necessary to build an intelligent classifier to ease the pressure of scrutiny.
+To understand complaint behaviours, the [Lumen database](https://www.lumendatabase.org) collects and analyses complaints on Twitter. It can also request for removal of online materials. (Lumen, 2020) Although one might think Twitter, where users are only allowed to send and read 140-character or fewer text messages, would confront the DMCA regularly, the records on Lumen dataset shows that there are more than 19,000 DMCA notices on Twitter.
 
 ## Dataset
 | Dataset (csv) | # of Records | Content |
@@ -71,7 +72,7 @@ Environment: Python 2.7
 ### Fold 'Engineering':
 #### Engineering/extract_for_classifying.py
 Extract reported_tweet.csv to reported_tweet_10num.txt
-Tweet JSON -> JSON of ['tweet_id', 'friend_count', 'followers_count','status_count', 'list_count', 'user_favorites_count'， 'retweet_count', 'favorite_count', 'urls_num', 'media_num', 'mention_users_num', 'hashtags']
+Tweet JSON -> JSON of ('tweet_id', 'friend_count', 'followers_count','status_count', 'list_count', 'user_favorites_count'， 'retweet_count', 'favorite_count', 'urls_num', 'media_num', 'mention_users_num', 'hashtags')
 
 #### Engineering/one_class_svm_precise_recall_55.py
 1. Selected features for SVM
