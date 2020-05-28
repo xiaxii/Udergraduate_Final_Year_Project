@@ -50,16 +50,17 @@ To understand complaint behaviours, the [Lumen database](https://www.lumendataba
 | Defamation | 4 |
 | GovernmentRequest | 148 |
 | LawEnforcementRequest | 3 |
+| Other | 251 |
 
 ### Complaints/person
-![https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/distribution_hist.png]
+![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/distribution_hist.png)
 
 ### Top10 most frequent hashtags
-![https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/10_frequent_words_hashtag_inReport.png)
-Other,251]
+![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/10_frequent_words_hashtag_inReport.png)
+
 
 ### Hashtag Word Cloud
-![https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/wordCloud_hashtag.png]
+![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/wordCloud_hashtag.png)
 
 
 ## Code
