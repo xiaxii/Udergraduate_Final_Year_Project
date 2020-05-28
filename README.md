@@ -142,13 +142,13 @@ The project starts by analysing the dataset (Step 1: Characterising datasets). A
 | Testing |	224.52 |	70,197	| 0	| 0	| 8,278	| 1	| 0.89	| 0.94 |
 
 Where: 
-- TP (Ture Positive): Predict the complained tweets as ‘will be complained’
-- TN (True Negative): Predict the non-complained tweets as ‘will not be complained’
-- FP (False Positive): Predict the non-complained tweets as ‘will be complained'
-- FN (False Negative): Predict the complained tweets as ‘will not be complained’
-- P (Precise): The fraction of truly complained tweets among the tweets that were predicted to receive complaints. P=TP/(TP+FP)
-- R (Recall): The fraction of tweets that were predicted to receive complaints among all complained tweets. R=TP/(TP+FN)
-- F1 Score: The harmonic mean of P and R. F1=(2P×R)/(P+R)
+- **TP (Ture Positive)**: Predict the complained tweets as ‘will be complained’
+- **TN (True Negative)**: Predict the non-complained tweets as ‘will not be complained’
+- **FP (False Positive)**: Predict the non-complained tweets as ‘will be complained'
+- **FN (False Negative)**: Predict the complained tweets as ‘will not be complained’
+- **P (Precise)**: The fraction of truly complained tweets among the tweets that were predicted to receive complaints. P=TP/(TP+FP)
+- **R (Recall)**: The fraction of tweets that were predicted to receive complaints among all complained tweets. R=TP/(TP+FN)
+- **F1 Score**: The harmonic mean of P and R. F1=(2P×R)/(P+R)
 
 
 
