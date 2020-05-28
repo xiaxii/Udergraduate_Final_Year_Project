@@ -27,7 +27,7 @@ Twitter is a popular microblogging platform, similar to Weibo. Users can post sh
 2. A classifier that can predict if a tweet might get complaints
 3. An detailed evaluation of the classifier to show precision and recall
 
-# Background
+# Preparation
 On Twitter, people can post short messages to their followers, which are called tweets. For contents presented on the platform, Twitter has its rules and policy to manage tweets. And Twitter responds to copyright complaints with the guide of the Digital Millennium Copyright Act (DMCA). Web complaint is a common mechanism for reporting offensive content to Twitter.
 
 In practice, the interactions between users, content moderators, and social media platforms are complex and highly strategic.
