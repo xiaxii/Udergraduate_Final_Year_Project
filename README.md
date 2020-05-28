@@ -1,17 +1,11 @@
 # Final Year Project
 ## Scope of the project
-
-A final year project must involve substantial work by an individual student in one or both of the following areas:
-
-**Implementation**: this must involve the development of a system. This can be software or hardware design. For software systems, the project should involve a substantial amount of programming with proper software engineering principles being used.
-
-**Research**: this should be real academic research carried out with one of the research teams in BUPT or QM and must include identifying something novel and getting results. It usually involves using a simulator or a tool such as MATLAB – it is not just reading papers and writing a summary.
-
+This is an individual substantial work of a real academic research carried out with my supervisor at Queen Mary University of London. It includes identifying something novel and getting results. 
 **My project's scope: software and research.**
 
 ## Specification
 
-**Titel**: 
+**Title**: 
 Classifying Web Complaints to Twitter
 
 **Scope**: 
