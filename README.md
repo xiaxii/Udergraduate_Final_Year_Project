@@ -29,8 +29,10 @@ Twitter is a popular microblogging platform, similar to Weibo. Users can post sh
 
 # Background
 On Twitter, people can post short messages to their followers, which are called tweets. For contents presented on the platform, Twitter has its rules and policy to manage tweets. And Twitter responds to copyright complaints with the guide of the Digital Millennium Copyright Act (DMCA). Web complaint is a common mechanism for reporting offensive content to Twitter.
+
 In practice, the interactions between users, content moderators, and social media platforms are complex and highly strategic.
 The most frequently applied response strategy to complaints is asking complainants for further information. However, this does not appease the complainants. Significantly, complaints are bearing a great deal of weight, arbitrating both the relationship between users, the platform and the negotiation around contentious public issues. As such, it is necessary to build an intelligent classifier to ease the pressure of scrutiny.
+
 To understand complaint behaviours, the [Lumen database](https://www.lumendatabase.org) collects and analyses complaints on Twitter. It can also request for removal of online materials. (Lumen, 2020) Although one might think Twitter, where users are only allowed to send and read 140-character or fewer text messages, would confront the DMCA regularly, the records on Lumen dataset shows that there are more than 19,000 DMCA notices on Twitter.
 
 ## Dataset
@@ -66,8 +68,6 @@ Environment: Python 2.7
 #### Analysis/text_analysis.py
 1. Word cloud 
 2. Word frequency
-
-
 
 ### Fold 'Engineering':
 #### Engineering/extract_for_classifying.py
