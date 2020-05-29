@@ -67,9 +67,9 @@ To understand complaint behaviours, the [Lumen database](https://www.lumendataba
 The project starts by analysing the dataset (Step 1: Characterising datasets). After statistical analysis on the reported tweets, we were able to filter features (Step 2: Prepare data for the classifier) and to build the classifier (Step 3: Building the classifier).
 ## Step1: Characterising datasets
 In the dataset, we have got 737,689 reported tweets, 1,863,979 complains and 157,868 notices. Each dataset had the relevant attributes well enclosed as :
-•	Reported tweets: (tweet ID, user ID, Tweet JSON); 
-•	Complaints: (tweet ID, notice ID, user ID, tweet URL);
-•	Notices: (notice ID, notice type, notice sent date, notice sender name, notice action taken, notice principal name, notice recipient name) 
+-	Reported tweets: (tweet ID, user ID, Tweet JSON); 
+-	Complaints: (tweet ID, notice ID, user ID, tweet URL);
+-	Notices: (notice ID, notice type, notice sent date, notice sender name, notice action taken, notice principal name, notice recipient name) 
 
 In the dataset of complaints and notices, each complaint has a reported tweets’ ID, as well as a relevant notice ID. The ‘tweet_id’ points to the reported tweet and the ‘notice_id’ points to the notice. Among the attributes of notices. We considered the types of notices would reveal the reason why tweets have received complaints. From the result of counting notice types, we know most tweets were reported because of the Digital Millennium Copyright Act (DMCA), a United States copyright law, and counts 99.7377%. 
 
@@ -123,8 +123,8 @@ One-class SVM uses a kernel method, to map the original space to the feature spa
 As presented in experiment results, the F1 score of our One-Class SVM was improved by adjusting attributes. With a high score of precise – 1, it can predict whether tweets will receive complaints. And the prediction is reliable because it has a high recall score – 0.89. Overall, the model got an F1 score of 0.94, which proved the classifier’s effectiveness.
 
 To profile the prediction results, we reviewed **word clouds of both positive group and negative group** (positive – predicted as will be complained; negative – predicted as will not receive complaints). 
-![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/blob/master/Outcome/one_class_svm_55/wordCloud_positive_hashtags.png)
-![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/one_class_svm_55/wordCloud_negative_hashtags.png)
+![Positive](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/blob/master/Outcome/one_class_svm_55/wordCloud_positive_hashtags.png)
+![Negative](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/one_class_svm_55/wordCloud_negative_hashtags.png)
 
 The positive one is similar to what we plotted for the entire dataset.  Hashtags like #PS4share and #WorldCup remains conspicuous in the positive group. On the contrary, #PS4share became invisible in the negative group.
 
