@@ -196,6 +196,6 @@ predict,tweet_id,notice_type
 4. Word Clouds of both positive and negative hashtag groups
 5. Word Frequency of both positive and negative hashtag groups
 
-#### Fold 'Other scripts'
+### Fold 'Other scripts'
 Random Forest/ Isolation Forest
 (Didn't work)
