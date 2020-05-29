@@ -120,6 +120,15 @@ One-class SVM uses a kernel method, to map the original space to the feature spa
 | Training	| 3,400.44 |	–	| –	| –	| –	| –	| –	| – |
 | Testing |	224.52 |	70,197	| 0	| 0	| 8,278	| 1	| 0.89	| 0.94 |
 
+Where: 
+- **TP (Ture Positive)**: Predict the complained tweets as ‘will be complained’
+- **TN (True Negative)**: Predict the non-complained tweets as ‘will not be complained’
+- **FP (False Positive)**: Predict the non-complained tweets as ‘will be complained'
+- **FN (False Negative)**: Predict the complained tweets as ‘will not be complained’
+- **P (Precise)**: The fraction of truly complained tweets among the tweets that were predicted to receive complaints. P=TP/(TP+FP)
+- **R (Recall)**: The fraction of tweets that were predicted to receive complaints among all complained tweets. R=TP/(TP+FN)
+- **F1 Score**: The harmonic mean of P and R. F1=(2P×R)/(P+R)
+
 As presented in experiment results, the F1 score of our One-Class SVM was improved by adjusting attributes. With a high score of precise – 1, it can predict whether tweets will receive complaints. And the prediction is reliable because it has a high recall score – 0.89. Overall, the model got an F1 score of 0.94, which proved the classifier’s effectiveness.
 
 To profile the prediction results, we reviewed **word clouds of both positive group and negative group** (positive – predicted as will be complained; negative – predicted as will not receive complaints). 
@@ -137,15 +146,6 @@ The negative group has more hashtags dispersed in the figure, even though both w
 Additionally, we counted the prediction results by their notice type. Only 9 samples in the testing set receive complaints with reasons other than DMCA. And 6 of them were predicted as negative (will not be complained). Thus, we can say our classifier meets the goal to detect tweets that are more likely to receive complaints because of DMCA problems.
 
 In conclusion, our classifier was successful in predicting DCMA complaints to Twitter. And it can better detect video game copyright crisis than the music/video copyright cases of celebrities.
-
-Where: 
-- **TP (Ture Positive)**: Predict the complained tweets as ‘will be complained’
-- **TN (True Negative)**: Predict the non-complained tweets as ‘will not be complained’
-- **FP (False Positive)**: Predict the non-complained tweets as ‘will be complained'
-- **FN (False Negative)**: Predict the complained tweets as ‘will not be complained’
-- **P (Precise)**: The fraction of truly complained tweets among the tweets that were predicted to receive complaints. P=TP/(TP+FP)
-- **R (Recall)**: The fraction of tweets that were predicted to receive complaints among all complained tweets. R=TP/(TP+FN)
-- **F1 Score**: The harmonic mean of P and R. F1=(2P×R)/(P+R)
 
 ## Code
 Environment: Python 2.7
