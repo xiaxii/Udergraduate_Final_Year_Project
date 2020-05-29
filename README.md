@@ -120,6 +120,22 @@ One-class SVM uses a kernel method, to map the original space to the feature spa
 | Training	| 3,400.44 |	–	| –	| –	| –	| –	| –	| – |
 | Testing |	224.52 |	70,197	| 0	| 0	| 8,278	| 1	| 0.89	| 0.94 |
 
+As presented in experiment results, the F1 score of our One-Class SVM was improved by adjusting attributes. With a high score of precise – 1, it can predict whether tweets will receive complaints. And the prediction is reliable because it has a high recall score – 0.89. Overall, the model got an F1 score of 0.94, which proved the classifier’s effectiveness.
+
+To profile the prediction results, we reviewed **word clouds of both positive group and negative group** (positive – predicted as will be complained; negative – predicted as will not receive complaints). 
+![](https://github.com/xiaxii/Udergraduate_Final_Year_Project/blob/master/Outcome/one_class_svm_55/wordCloud_positive_hashtags.png)
+![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/one_class_svm_55/wordCloud_negative_hashtags.png)
+
+The positive one is similar to what we plotted for the entire dataset.  Hashtags like #PS4share and #WorldCup remains conspicuous in the positive group. On the contrary, #PS4share became invisible in the negative group.
+
+The top10 hashtags in the positive group are ‘ps4share’, ‘music’, ‘fortnite’, ‘worldcup’, ‘cover’, ‘cwc19’, ‘twitch’, ‘dance’, ‘bts’ and ‘dhoni’. Ranks of video game hashtags (‘ps4share’, ‘fortnite’, ‘twitch’ and ‘dhoni’) rose. It indicates that game videos are in the worst-hit region of copyright crisis. Also, hashtags of entertainment copyright is another concern: ‘music’, ‘cover’, ‘bts’, ‘dance’ are related to the use of music. K-pop fandom culture is helping to protect the copyright of those idol groups’ music.
+
+The negative group (Figure 12) has more hashtags dispersed in the figure, even though both word clouds were generated with the same parameter settings (max_words=500, max_font_size=200). Comparing to the frequently occurred hashtags in the positive group, like ‘music’, ‘cover’, ‘blackpink’, ‘BTS’ and ‘CWC19’, other words in this word cloud are much smaller. Typical video game vocabularies are not in the negative group. This is a hint that there were more noises in the complaints to music copyrights. Video game copyright issues should be a critical point of web complaints to Twitter.
+
+Additionally, we counted the prediction results by their notice type (Figure 13. Non-DMCA complained tweets). Only 9 samples in the testing set receive complaints with reasons other than DMCA. And 6 of them were predicted as negative (will not be complained). Thus, we can say our classifier meets the goal to detect tweets that are more likely to receive complaints because of DMCA problems.
+
+In conclusion, our classifier was successful in predicting DCMA complaints to Twitter. And it can better detect video game copyright crisis than the music/video copyright cases of celebrities.
+
 Where: 
 - **TP (Ture Positive)**: Predict the complained tweets as ‘will be complained’
 - **TN (True Negative)**: Predict the non-complained tweets as ‘will not be complained’
