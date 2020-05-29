@@ -52,15 +52,15 @@ To understand complaint behaviours, the [Lumen database](https://www.lumendataba
 | LawEnforcementRequest | 3 |
 | Other | 251 |
 
-### Complaints/person
-![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/distribution_hist.png)
+### Complained tweets/person
+![Complained tweets/person](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/distribution_hist.png)
 
 ### Top10 most frequent hashtags
-![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/10_frequent_words_hashtag_inReport.png)
+![Top10 most frequent hashtags](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/10_frequent_words_hashtag_inReport.png)
 
 
 ### Hashtag Word Cloud
-![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/wordCloud_hashtag.png)
+![Hashtag Word Cloud](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/Useful%20Figures/wordCloud_hashtag.png)
 
 # Methods
 ![Work Flow](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/flow.png)
