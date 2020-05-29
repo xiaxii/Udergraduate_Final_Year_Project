@@ -124,7 +124,7 @@ As presented in experiment results, the F1 score of our One-Class SVM was improv
 
 To profile the prediction results, we reviewed **word clouds of both positive group and negative group** (positive – predicted as will be complained; negative – predicted as will not receive complaints). 
 ![](https://github.com/xiaxii/Udergraduate_Final_Year_Project/blob/master/Outcome/one_class_svm_55/wordCloud_positive_hashtags.png)
-![](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/one_class_svm_55/wordCloud_negative_hashtags.png)
+![](https://github.com/xiaxii/Udergraduate_Final_Year_Project/blob/master/Outcome/one_class_svm_55/wordCloud_negative_hashtags.png)
 
 The positive one is similar to what we plotted for the entire dataset.  Hashtags like #PS4share and #WorldCup remains conspicuous in the positive group. On the contrary, #PS4share became invisible in the negative group.
 
@@ -196,6 +196,5 @@ predict,tweet_id,notice_type
 
 #### Fold 'Other scripts'
 Random Forest/ Isolation Forest
-
 
 
