@@ -123,6 +123,7 @@ One-class SVM uses a kernel method, to map the original space to the feature spa
 As presented in experiment results, the F1 score of our One-Class SVM was improved by adjusting attributes. With a high score of precise – 1, it can predict whether tweets will receive complaints. And the prediction is reliable because it has a high recall score – 0.89. Overall, the model got an F1 score of 0.94, which proved the classifier’s effectiveness.
 
 To profile the prediction results, we reviewed **word clouds of both positive group and negative group** (positive – predicted as will be complained; negative – predicted as will not receive complaints). 
+
 ![Positive](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/blob/master/Outcome/one_class_svm_55/wordCloud_positive_hashtags.png)
 
 ![Negative](https://raw.githubusercontent.com/xiaxii/Udergraduate_Final_Year_Project/master/Outcome/one_class_svm_55/wordCloud_negative_hashtags.png)
@@ -197,3 +198,4 @@ predict,tweet_id,notice_type
 
 #### Fold 'Other scripts'
 Random Forest/ Isolation Forest
+(Didn't work)
