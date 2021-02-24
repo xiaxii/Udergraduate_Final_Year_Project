@@ -1,6 +1,6 @@
 # Acdemic Requirements
 ## Scope of the project
-This is an individual substantial work of a real academic research carried out with my supervisor at Queen Mary University of London. It includes identifying something novel and getting results. 
+This is an individual substantial work of a real academic research carried out with my supervisor at Queen Mary University of London.
 **My project's scope: software and research.**
 
 ## Specification
